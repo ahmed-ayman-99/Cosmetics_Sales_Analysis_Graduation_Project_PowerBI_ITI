@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Cosmetic Cursor</title>
+    <meta name="description" content="Sign in to your Cosmetic Cursor account to access your cart, favorites, and orders.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo2.png" alt="Cosmetic" class="logo-img">
+                        <span class="logo-text">Cosmetics</span>
+                    </a>
+                </div>
+                
+                <nav class="nav">
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="dropdown">
+                            <a href="shop.html">Shop <i class="fas fa-chevron-down"></i></a>
+                            <div class="mega-menu">
+                                <div class="mega-menu-content">
+                                    <div class="mega-menu-column">
+                                        <h4>Makeup</h4>
+                                        <ul>
+                                            <li><a href="shop.html?subcategory=foundation">Foundation</a></li>
+                                            <li><a href="shop.html?subcategory=concealer">Concealer</a></li>
+                                            <li><a href="shop.html?subcategory=powder">Powder</a></li>
+                                            <li><a href="shop.html?subcategory=blush">Blush</a></li>
+                                            <li><a href="shop.html?subcategory=bronzer">Bronzer</a></li>
+                                            <li><a href="shop.html?subcategory=highlighter">Highlighter</a></li>
+                                            <li><a href="shop.html?subcategory=eye-shadow">Eye Shadow</a></li>
+                                            <li><a href="shop.html?subcategory=eyeliner">Eyeliner</a></li>
+                                            <li><a href="shop.html?subcategory=mascara">Mascara</a></li>
+                                            <li><a href="shop.html?subcategory=lipstick">Lipstick</a></li>
+                                            <li><a href="shop.html?subcategory=lip-gloss">Lip Gloss</a></li>
+                                            <li><a href="shop.html?subcategory=lip-liner">Lip Liner</a></li>
+                                            <li><a href="shop.html?subcategory=bb-cream">BB Cream</a></li>
+                                            <li><a href="shop.html?subcategory=cc-cream">CC Cream</a></li>
+                                            <li><a href="shop.html?subcategory=contour">Contour</a></li>
+                                            <li><a href="shop.html?subcategory=makeup-remover">Makeup Remover</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-menu-column">
+                                        <h4>Skincare</h4>
+                                        <ul>
+                                            <li><a href="shop.html?subcategory=cleanser">Cleanser</a></li>
+                                            <li><a href="shop.html?subcategory=moisturizer">Moisturizer</a></li>
+                                            <li><a href="shop.html?subcategory=serum">Serum</a></li>
+                                            <li><a href="shop.html?subcategory=face-oil">Face Oil</a></li>
+                                            <li><a href="shop.html?subcategory=exfoliator">Exfoliator</a></li>
+                                            <li><a href="shop.html?subcategory=face-mask">Face Mask</a></li>
+                                            <li><a href="shop.html?subcategory=primer">Primer</a></li>
+                                            <li><a href="shop.html?subcategory=setting-spray">Setting Spray</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-menu-column">
+                                        <h4>Featured</h4>
+                                        <ul>
+                                            <li><a href="shop.html?featured=new">New Arrivals</a></li>
+                                            <li><a href="shop.html?featured=sale">Sale Items</a></li>
+                                            <li><a href="shop.html?featured=best">Best Sellers</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Header Actions -->
+                <div class="header-actions">
+                    <button class="search-toggle" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <a href="#account" class="account-link" aria-label="Account">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <a href="wishlist.html" class="wishlist-link" aria-label="Wishlist">
+                        <i class="fas fa-heart"></i>
+                    </a>
+                    <a href="cart.html" class="cart-link" aria-label="Cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+                
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Search Overlay -->
+        <div class="search-overlay">
+            <div class="search-content">
+                <button class="search-close">
+                    <i class="fas fa-times"></i>
+                </button>
+                <form class="search-form">
+                    <input type="text" placeholder="Search for products..." class="search-input">
+                    <button type="submit" class="search-submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- Login Hero -->
+    <section class="login-hero">
+        <div class="container">
+            <div class="login-hero-content">
+                <h1>Welcome Back!</h1>
+                <p>Sign in to access your cart, favorites, and orders.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login Content -->
+    <section class="login-content">
+        <div class="container">
+            <div class="login-container">
+                <form class="login-form" id="login-form">
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <div class="input-group">
+                            <i class="fas fa-envelope input-icon"></i>
+                            <input type="email" id="email" name="email" required placeholder="Enter your email address">
+                        </div>
+                        <div class="error-message" id="email-error"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Password *</label>
+                        <div class="input-group">
+                            <i class="fas fa-lock input-icon"></i>
+                            <input type="password" id="password" name="password" required placeholder="Enter your password">
+                            <button type="button" class="password-toggle" id="password-toggle" aria-label="Toggle password visibility">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                        <div class="error-message" id="password-error"></div>
+                    </div>
+                    
+                    <div class="form-options">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="remember" id="remember">
+                            <span class="checkmark"></span>
+                            Remember me
+                        </label>
+                        <a href="reset-password.html" class="forgot-password">Forgot Password?</a>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary login-btn">
+                        <span class="btn-text">Sign In</span>
+                        <span class="btn-loading" style="display: none;">
+                            <i class="fas fa-spinner fa-spin"></i>
+                            Signing In...
+                        </span>
+                    </button>
+                    
+                    <div class="login-divider">
+                        <span>or</span>
+                    </div>
+                    
+                    <div class="social-login">
+                        <button type="button" class="btn btn-social btn-google">
+                            <i class="fab fa-google"></i>
+                            Continue with Google
+                        </button>
+                        <button type="button" class="btn btn-social btn-facebook">
+                            <i class="fab fa-facebook-f"></i>
+                            Continue with Facebook
+                        </button>
+                    </div>
+                    
+                    <div class="signup-link">
+                        <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>About Us</h4>
+                    <p>We're passionate about bringing you the finest beauty products with natural ingredients that are good for your skin and the planet.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.pinterest.com/"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="shop.html?category=skincare">Skincare</a></li>
+                        <li><a href="shop.html?category=makeup">Makeup</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get special offers and beauty tips delivered to your inbox.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/login.js"></script>
+</body>
+</html> 

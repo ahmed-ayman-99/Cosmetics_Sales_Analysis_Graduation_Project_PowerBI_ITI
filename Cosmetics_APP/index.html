@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmetics Website - Premium Beauty Products</title>
+    <meta name="description" content="Discover premium beauty products with natural ingredients. Shop skincare, makeup, haircare, and fragrances.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo2.png" alt="Cosmetic" class="logo-img">
+                        <span class="logo-text">Cosmetics</span>
+                    </a>
+                </div>
+                
+                <!-- Navigation -->
+                <nav class="nav">
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="dropdown">
+                            <a href="shop.html">Shop <i class="fas fa-chevron-down"></i></a>
+                            <div class="mega-menu">
+                                <div class="mega-menu-content">
+                                    <div class="mega-menu-column">
+                                        <h4>Makeup</h4>
+                                        <ul>
+                                            <li><a href="shop.html?subcategory=foundation">Foundation</a></li>
+                                            <li><a href="shop.html?subcategory=concealer">Concealer</a></li>
+                                            <li><a href="shop.html?subcategory=powder">Powder</a></li>
+                                            <li><a href="shop.html?subcategory=blush">Blush</a></li>
+                                            <li><a href="shop.html?subcategory=bronzer">Bronzer</a></li>
+                                            <li><a href="shop.html?subcategory=highlighter">Highlighter</a></li>
+                                            <li><a href="shop.html?subcategory=eye-shadow">Eye Shadow</a></li>
+                                            <li><a href="shop.html?subcategory=eyeliner">Eyeliner</a></li>
+                                            <li><a href="shop.html?subcategory=mascara">Mascara</a></li>
+                                            <li><a href="shop.html?subcategory=lipstick">Lipstick</a></li>
+                                            <li><a href="shop.html?subcategory=lip-gloss">Lip Gloss</a></li>
+                                            <li><a href="shop.html?subcategory=lip-liner">Lip Liner</a></li>
+                                            <li><a href="shop.html?subcategory=bb-cream">BB Cream</a></li>
+                                            <li><a href="shop.html?subcategory=cc-cream">CC Cream</a></li>
+                                            <li><a href="shop.html?subcategory=contour">Contour</a></li>
+                                            <li><a href="shop.html?subcategory=makeup-remover">Makeup Remover</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-menu-column">
+                                        <h4>Skincare</h4>
+                                        <ul>
+                                            <li><a href="shop.html?subcategory=cleanser">Cleanser</a></li>
+                                            <li><a href="shop.html?subcategory=moisturizer">Moisturizer</a></li>
+                                            <li><a href="shop.html?subcategory=serum">Serum</a></li>
+                                            <li><a href="shop.html?subcategory=face-oil">Face Oil</a></li>
+                                            <li><a href="shop.html?subcategory=exfoliator">Exfoliator</a></li>
+                                            <li><a href="shop.html?subcategory=face-mask">Face Mask</a></li>
+                                            <li><a href="shop.html?subcategory=primer">Primer</a></li>
+                                            <li><a href="shop.html?subcategory=setting-spray">Setting Spray</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-menu-column">
+                                        <h4>Featured</h4>
+                                        <ul>
+                                            <li><a href="shop.html?featured=new">New Arrivals</a></li>
+                                            <li><a href="shop.html?featured=sale">Sale Items</a></li>
+                                            <li><a href="shop.html?featured=best">Best Sellers</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Header Actions -->
+                <div class="header-actions">
+                    <button class="search-toggle" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <a href="#account" class="account-link" aria-label="Account">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <a href="wishlist.html" class="wishlist-link" aria-label="Wishlist">
+                        <i class="fas fa-heart"></i>
+                    </a>
+                    <a href="cart.html" class="cart-link" aria-label="Cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+                
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Search Overlay -->
+        <div class="search-overlay">
+            <div class="search-content">
+                <button class="search-close">
+                    <i class="fas fa-times"></i>
+                </button>
+                <form class="search-form">
+                    <input type="text" placeholder="Search for products..." class="search-input">
+                    <button type="submit" class="search-submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Slider -->
+        <section class="hero-slider">
+            <div class="swiper hero-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="hero-slide" style="background-image: url('assets/images/cosmetic-banner-1.jpg');">
+                            <div class="container">
+                                <div class="hero-content">
+                                    <h2 class="hero-title">Let Your Beauty Shine Through</h2>
+                                    <p class="hero-subtitle">Discover our new collection</p>
+                                    <a href="shop.html" class="btn btn-primary">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="hero-slide" style="background-image: url('assets/images/cosmetic-banner-3.jpg');">
+                            <div class="container">
+                                <div class="hero-content">
+                                    <h2 class="hero-title">Natural Ingredients</h2>
+                                    <p class="hero-subtitle">Good for your skin, good for the planet</p>
+                                    <a href="about.html" class="btn btn-primary">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+
+        <!-- Featured Categories -->
+        <section class="featured-categories">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Shop by Category</h2>
+                </div>
+                <div class="categories-grid">
+                    <div class="category-card">
+                        <div class="category-image">
+                            <img src="assets/images/makeup-category.jpg" alt="Makeup">
+                        </div>
+                        <div class="category-content">
+                            <h3>Makeup</h3>
+                            <p>Discover our collection of premium makeup products including foundation, lipstick, eyeshadow, and more.</p>
+                            <a href="shop.html?category=makeup" class="btn btn-secondary">Shop Now</a>
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-image">
+                            <img src="assets/images/skincare-category.jpg" alt="Skincare">
+                        </div>
+                        <div class="category-content">
+                            <h3>Skincare</h3>
+                            <p>Nourish your skin with our range of cleansers, moisturizers, serums, and treatments.</p>
+                            <a href="shop.html?category=skincare" class="btn btn-secondary">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products -->
+        <section class="featured-products">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Best Sellers</h2>
+                    <p class="section-subtitle">Our most popular products</p>
+                </div>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="assets/images/product-1.jpg" alt="Product 1">
+                            <div class="product-badges">
+                                <span class="badge badge-sale">Sale</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="action-btn wishlist-btn" aria-label="Add to Wishlist">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                                <button class="action-btn quick-view-btn" aria-label="Quick View">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Luxury Face Cream</h3>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(4.8)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$45.00</span>
+                                <span class="original-price">$60.00</span>
+                            </div>
+                            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="assets/images/product-2.jpg" alt="Product 2">
+                            <div class="product-badges">
+                                <span class="badge badge-new">New</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="action-btn wishlist-btn" aria-label="Add to Wishlist">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                                <button class="action-btn quick-view-btn" aria-label="Quick View">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Natural Lipstick</h3>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(4.9)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$28.00</span>
+                            </div>
+                            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="assets/images/product-3.jpg" alt="Product 3">
+                            <div class="product-actions">
+                                <button class="action-btn wishlist-btn" aria-label="Add to Wishlist">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                                <button class="action-btn quick-view-btn" aria-label="Quick View">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Hydrating Serum</h3>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(4.7)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$65.00</span>
+                            </div>
+                            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="assets/images/product-4.jpg" alt="Product 4">
+                            <div class="product-badges">
+                                <span class="badge badge-sale">Sale</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="action-btn wishlist-btn" aria-label="Add to Wishlist">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                                <button class="action-btn quick-view-btn" aria-label="Quick View">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Organic Shampoo</h3>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(4.6)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$32.00</span>
+                                <span class="original-price">$40.00</span>
+                            </div>
+                            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Promo Banner -->
+        <section class="promo-banner">
+            <div class="container">
+                <div class="banner-content">
+                    <div class="banner-text">
+                        <h2>Summer Sale</h2>
+                        <p>Up to 50% Off</p>
+                        <a href="shop.html?sale=true" class="btn btn-primary">Shop the Sale</a>
+                    </div>
+                    <div class="banner-image">
+                        <img src="assets/images/promo-banner4.jpg" alt="Summer Sale">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Customer Reviews -->
+        <section class="customer-reviews">
+            <div class="container">
+                <div class="reviews-header">
+                    <h2 class="reviews-title">We Value Each of Our Customers</h2>
+                    <p class="reviews-subtitle">What Clients Are Saying</p>
+                </div>
+                
+                <div class="reviews-carousel swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="review-card">
+                                <div class="review-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="review-content">
+                                    <p>"Great Quality Products With Good Packaging And Fast Delivery. I Am Very Satisfied With My Purchase And Will Definitely Order Again!"</p>
+                                </div>
+                                <div class="reviewer-info">
+                                    <h4 class="reviewer-name">Kristin Watson</h4>
+                                    <p class="reviewer-title">Senior Artist</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <div class="review-card">
+                                <div class="review-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="review-content">
+                                    <p>"Amazing Products! The Quality Is Outstanding And The Customer Service Is Exceptional. Highly Recommend To Everyone!"</p>
+                                </div>
+                                <div class="reviewer-info">
+                                    <h4 class="reviewer-name">Sarah Johnson</h4>
+                                    <p class="reviewer-title">Makeup Artist</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <div class="review-card">
+                                <div class="review-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="review-content">
+                                    <p>"The Best Cosmetics I've Ever Used! Long-Lasting, Beautiful Colors, And Perfect For My Skin Type. Love Everything About This Brand!"</p>
+                                </div>
+                                <div class="reviewer-info">
+                                    <h4 class="reviewer-name">Emily Rodriguez</h4>
+                                    <p class="reviewer-title">Beauty Blogger</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <div class="review-card">
+                                <div class="review-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="review-content">
+                                    <p>"Incredible Quality At Affordable Prices! The Products Exceeded My Expectations And The Shipping Was Lightning Fast!"</p>
+                                </div>
+                                <div class="reviewer-info">
+                                    <h4 class="reviewer-name">Maria Chen</h4>
+                                    <p class="reviewer-title">Fashion Designer</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <div class="review-card">
+                                <div class="review-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="review-content">
+                                    <p>"Perfect For Professional Use! The Pigmentation Is Amazing And The Products Last All Day. My Clients Love The Results!"</p>
+                                </div>
+                                <div class="reviewer-info">
+                                    <h4 class="reviewer-name">Lisa Thompson</h4>
+                                    <p class="reviewer-title">Professional MUA</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Navigation Dots -->
+                    <div class="swiper-pagination"></div>
+                    
+                    <!-- Navigation Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>About Us</h4>
+                    <p>We're passionate about bringing you the finest beauty products with natural ingredients that are good for your skin and the planet.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.pinterest.com/"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="shop.html?category=skincare">Skincare</a></li>
+                        <li><a href="shop.html?category=makeup">Makeup</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get special offers and beauty tips delivered to your inbox.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <!--
+            <div class="footer-bottom">
+                <p>&copy; 2024 Cosmetics Website. All rights reserved.</p>
+            </div>
+            -->
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html> 

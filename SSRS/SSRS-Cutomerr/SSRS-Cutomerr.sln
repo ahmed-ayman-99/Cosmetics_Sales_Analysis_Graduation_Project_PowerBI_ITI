@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36203.30
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "SSRS-Cutomerr-SalesPerson", "SSRS-Cutomerr\SSRS-Cutomerr-SalesPerson.rptproj", "{20564174-57E5-E5E4-B5D3-A0A8288ED241}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{20564174-57E5-E5E4-B5D3-A0A8288ED241}.Debug|Default.ActiveCfg = Debug
+		{20564174-57E5-E5E4-B5D3-A0A8288ED241}.Debug|Default.Build.0 = Debug
+		{20564174-57E5-E5E4-B5D3-A0A8288ED241}.Debug|Default.Deploy.0 = Debug
+		{20564174-57E5-E5E4-B5D3-A0A8288ED241}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{20564174-57E5-E5E4-B5D3-A0A8288ED241}.DebugLocal|Default.Build.0 = DebugLocal
+		{20564174-57E5-E5E4-B5D3-A0A8288ED241}.Release|Default.ActiveCfg = Release
+		{20564174-57E5-E5E4-B5D3-A0A8288ED241}.Release|Default.Build.0 = Release
+		{20564174-57E5-E5E4-B5D3-A0A8288ED241}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C269F0FC-F5FE-450D-9EE4-0E707A063871}
+	EndGlobalSection
+EndGlobal

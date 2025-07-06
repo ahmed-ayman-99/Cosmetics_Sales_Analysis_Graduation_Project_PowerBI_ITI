@@ -1,0 +1,265 @@
+{
+    "website": {
+      "name": "Cosmetics Website",
+      "inspiration": "Blusho by RadiusTheme",
+      "style": {
+        "colorPalette": {
+          "primary": "#ff6b9e",
+          "secondary": "#333333",
+          "accent": "#ffb6c1",
+          "light": "#ffffff",
+          "dark": "#1a1a1a",
+          "text": "#555555",
+          "lightText": "#ffffff"
+        },
+        "typography": {
+          "primaryFont": "Poppins, sans-serif",
+          "secondaryFont": "Playfair Display, serif",
+          "baseSize": "16px",
+          "headingSizes": {
+            "h1": "48px",
+            "h2": "36px",
+            "h3": "28px",
+            "h4": "22px",
+            "h5": "18px"
+          }
+        },
+        "spacing": {
+          "small": "10px",
+          "medium": "20px",
+          "large": "40px",
+          "xlarge": "60px"
+        },
+        "borderRadius": {
+          "small": "4px",
+          "medium": "8px",
+          "large": "12px",
+          "circle": "50%"
+        }
+      },
+      "layout": {
+        "header": {
+          "style": "sticky",
+          "logoPosition": "left",
+          "navigation": "right",
+          "elements": [
+            "logo",
+            "primary-menu",
+            "search",
+            "account",
+            "cart",
+            "wishlist"
+          ],
+          "background": "rgba(255, 255, 255, 0.95)",
+          "textColor": "#333333",
+          "hoverColor": "#ff6b9e"
+        },
+        "footer": {
+          "columns": 4,
+          "sections": [
+            "about",
+            "quick-links",
+            "products",
+            "newsletter"
+          ],
+          "background": "#1a1a1a",
+          "textColor": "#ffffff",
+          "accentColor": "#ff6b9e"
+        },
+        "productGrid": {
+          "columns": 4,
+          "cardStyle": "modern",
+          "elements": [
+            "image",
+            "badges",
+            "title",
+            "price",
+            "rating",
+            "add-to-cart"
+          ],
+          "hoverEffect": "scale-up"
+        }
+      },
+      "pages": {
+        "homepage": {
+          "sections": [
+            {
+              "type": "hero-slider",
+              "slides": [
+                {
+                  "image": "cosmetic-banner-1.jpg",
+                  "title": "Premium Beauty Products",
+                  "subtitle": "Discover our new collection",
+                  "buttonText": "Shop Now",
+                  "buttonLink": "/shop"
+                },
+                {
+                  "image": "cosmetic-banner-2.jpg",
+                  "title": "Natural Ingredients",
+                  "subtitle": "Good for your skin, good for the planet",
+                  "buttonText": "Learn More",
+                  "buttonLink": "/about"
+                }
+              ]
+            },
+            {
+              "type": "featured-categories",
+              "title": "Shop by Category",
+              "categories": [
+                {
+                  "image": "skincare-category.jpg",
+                  "title": "Skincare",
+                  "link": "/skincare"
+                },
+                {
+                  "image": "makeup-category.jpg",
+                  "title": "Makeup",
+                  "link": "/makeup"
+                },
+                {
+                  "image": "haircare-category.jpg",
+                  "title": "Haircare",
+                  "link": "/haircare"
+                },
+                {
+                  "image": "fragrance-category.jpg",
+                  "title": "Fragrances",
+                  "link": "/fragrances"
+                }
+              ]
+            },
+            {
+              "type": "featured-products",
+              "title": "Best Sellers",
+              "subtitle": "Our most popular products",
+              "layout": "grid",
+              "products": 8
+            },
+            {
+              "type": "banner",
+              "image": "promo-banner.jpg",
+              "title": "Summer Sale",
+              "subtitle": "Up to 50% Off",
+              "buttonText": "Shop the Sale",
+              "buttonLink": "/sale"
+            },
+            {
+              "type": "testimonials",
+              "title": "What Our Customers Say",
+              "layout": "carousel",
+              "testimonials": [
+                {
+                  "content": "These products transformed my skincare routine!",
+                  "author": "Sarah J.",
+                  "rating": 5
+                },
+                {
+                  "content": "The best makeup I've ever used. Highly recommend!",
+                  "author": "Emily T.",
+                  "rating": 5
+                }
+              ]
+            },
+            {
+              "type": "blog-preview",
+              "title": "Beauty Tips & Trends",
+              "posts": 3,
+              "layout": "grid"
+            }
+          ]
+        },
+        "product": {
+          "layout": "two-column",
+          "elements": [
+            "gallery",
+            "title",
+            "price",
+            "rating",
+            "short-description",
+            "add-to-cart",
+            "wishlist",
+            "tabs",
+            "related-products"
+          ],
+          "galleryStyle": "vertical-thumbnails"
+        },
+        "blog": {
+          "layout": "sidebar-right",
+          "elements": [
+            "featured-image",
+            "title",
+            "meta",
+            "content",
+            "tags",
+            "author",
+            "comments",
+            "related-posts"
+          ]
+        }
+      },
+      "features": {
+        "ecommerce": true,
+        "blog": true,
+        "responsive": true,
+        "animations": true,
+        "megamenu": true,
+        "quickView": true,
+        "wishlist": true,
+        "compare": true,
+        "ajaxSearch": true,
+        "newsletter": true,
+        "socialMedia": true
+      },
+      "components": {
+        "buttons": {
+          "primary": {
+            "background": "#ff6b9e",
+            "textColor": "#ffffff",
+            "hoverBackground": "#e55d8b",
+            "borderRadius": "30px",
+            "padding": "12px 30px"
+          },
+          "secondary": {
+            "background": "transparent",
+            "textColor": "#333333",
+            "border": "1px solid #333333",
+            "hoverBackground": "#333333",
+            "hoverTextColor": "#ffffff",
+            "borderRadius": "30px"
+          }
+        },
+        "productCard": {
+          "imageAspectRatio": "1:1",
+          "titleColor": "#333333",
+          "priceColor": "#ff6b9e",
+          "salePriceColor": "#999999",
+          "badge": {
+            "sale": {
+              "background": "#ff6b9e",
+              "textColor": "#ffffff"
+            },
+            "new": {
+              "background": "#333333",
+              "textColor": "#ffffff"
+            }
+          }
+        }
+      },
+      "content": {
+        "productCategories": [
+          "Skincare",
+          "Makeup",
+          "Haircare",
+          "Fragrances",
+          "Bath & Body",
+          "Tools & Brushes"
+        ],
+        "brands": [
+          "Luxury Cosmetics",
+          "Organic Beauty",
+          "Professional",
+          "Drugstore Favorites"
+        ]
+      }
+    }
+  }

@@ -1,0 +1,52 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\SALMA\\Final Project\\SSRS\\SSRS-Cutomerr\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{20564174-57E5-E5E4-B5D3-A0A8288ED241}|SSRS-Cutomerr\\SSRS-Cutomerr-SalesPerson.rptproj|E:\\SALMA\\Final Project\\SSRS\\SSRS-Cutomerr\\SSRS-Cutomerr\\Customer-SSRS.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}",
+      "RelativeMoniker": "D:0:0:{20564174-57E5-E5E4-B5D3-A0A8288ED241}|SSRS-Cutomerr\\SSRS-Cutomerr-SalesPerson.rptproj|solutionrelative:SSRS-Cutomerr\\Customer-SSRS.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20564174-57E5-E5E4-B5D3-A0A8288ED241}|SSRS-Cutomerr\\SSRS-Cutomerr-SalesPerson.rptproj|E:\\SALMA\\Final Project\\SSRS\\SSRS-Cutomerr\\SSRS-Cutomerr\\SSRS-Sales Person.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}",
+      "RelativeMoniker": "D:0:0:{20564174-57E5-E5E4-B5D3-A0A8288ED241}|SSRS-Cutomerr\\SSRS-Cutomerr-SalesPerson.rptproj|solutionrelative:SSRS-Cutomerr\\SSRS-Sales Person.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SSRS-Sales Person.rdl [Design]",
+              "DocumentMoniker": "E:\\SALMA\\Final Project\\SSRS\\SSRS-Cutomerr\\SSRS-Cutomerr\\SSRS-Sales Person.rdl",
+              "RelativeDocumentMoniker": "SSRS-Cutomerr\\SSRS-Sales Person.rdl",
+              "ToolTip": "E:\\SALMA\\Final Project\\SSRS\\SSRS-Cutomerr\\SSRS-Cutomerr\\SSRS-Sales Person.rdl [Design]",
+              "RelativeToolTip": "SSRS-Cutomerr\\SSRS-Sales Person.rdl [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-30T21:34:02.8Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Customer-SSRS.rdl [Design]",
+              "DocumentMoniker": "E:\\SALMA\\Final Project\\SSRS\\SSRS-Cutomerr\\SSRS-Cutomerr\\Customer-SSRS.rdl",
+              "RelativeDocumentMoniker": "SSRS-Cutomerr\\Customer-SSRS.rdl",
+              "ToolTip": "E:\\SALMA\\Final Project\\SSRS\\SSRS-Cutomerr\\SSRS-Cutomerr\\Customer-SSRS.rdl [Design]",
+              "RelativeToolTip": "SSRS-Cutomerr\\Customer-SSRS.rdl [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-30T18:06:33.63Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

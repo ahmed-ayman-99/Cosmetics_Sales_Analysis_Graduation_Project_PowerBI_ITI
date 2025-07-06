@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Face Cream - Cosmetics Website</title>
+    <meta name="description" content="Premium luxury face cream with natural ingredients. Hydrating, anti-aging formula for all skin types.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo2.png" alt="Cosmetic" class="logo-img">
+                        <span class="logo-text">Cosmetics</span>
+                    </a>
+                </div>
+                
+                <!-- Navigation -->
+                <nav class="nav">
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="dropdown">
+                            <a href="shop.html">Shop <i class="fas fa-chevron-down"></i></a>
+                            <div class="mega-menu">
+                                <div class="mega-menu-content">
+                                    <div class="mega-menu-column">
+                                        <h4>Makeup</h4>
+                                        <ul>
+                                            <li><a href="shop.html?subcategory=foundation">Foundation</a></li>
+                                            <li><a href="shop.html?subcategory=concealer">Concealer</a></li>
+                                            <li><a href="shop.html?subcategory=powder">Powder</a></li>
+                                            <li><a href="shop.html?subcategory=blush">Blush</a></li>
+                                            <li><a href="shop.html?subcategory=bronzer">Bronzer</a></li>
+                                            <li><a href="shop.html?subcategory=highlighter">Highlighter</a></li>
+                                            <li><a href="shop.html?subcategory=eye-shadow">Eye Shadow</a></li>
+                                            <li><a href="shop.html?subcategory=eyeliner">Eyeliner</a></li>
+                                            <li><a href="shop.html?subcategory=mascara">Mascara</a></li>
+                                            <li><a href="shop.html?subcategory=lipstick">Lipstick</a></li>
+                                            <li><a href="shop.html?subcategory=lip-gloss">Lip Gloss</a></li>
+                                            <li><a href="shop.html?subcategory=lip-liner">Lip Liner</a></li>
+                                            <li><a href="shop.html?subcategory=bb-cream">BB Cream</a></li>
+                                            <li><a href="shop.html?subcategory=cc-cream">CC Cream</a></li>
+                                            <li><a href="shop.html?subcategory=contour">Contour</a></li>
+                                            <li><a href="shop.html?subcategory=makeup-remover">Makeup Remover</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-menu-column">
+                                        <h4>Skincare</h4>
+                                        <ul>
+                                            <li><a href="shop.html?subcategory=cleanser">Cleanser</a></li>
+                                            <li><a href="shop.html?subcategory=moisturizer">Moisturizer</a></li>
+                                            <li><a href="shop.html?subcategory=serum">Serum</a></li>
+                                            <li><a href="shop.html?subcategory=face-oil">Face Oil</a></li>
+                                            <li><a href="shop.html?subcategory=exfoliator">Exfoliator</a></li>
+                                            <li><a href="shop.html?subcategory=face-mask">Face Mask</a></li>
+                                            <li><a href="shop.html?subcategory=primer">Primer</a></li>
+                                            <li><a href="shop.html?subcategory=setting-spray">Setting Spray</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-menu-column">
+                                        <h4>Featured</h4>
+                                        <ul>
+                                            <li><a href="shop.html?featured=new">New Arrivals</a></li>
+                                            <li><a href="shop.html?featured=sale">Sale Items</a></li>
+                                            <li><a href="shop.html?featured=best">Best Sellers</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Header Actions -->
+                <div class="header-actions">
+                    <button class="search-toggle" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <a href="#account" class="account-link" aria-label="Account">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <a href="wishlist.html" class="wishlist-link" aria-label="Wishlist">
+                        <i class="fas fa-heart"></i>
+                    </a>
+                    <a href="cart.html" class="cart-link" aria-label="Cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+                
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Search Overlay -->
+        <div class="search-overlay">
+            <div class="search-content">
+                <button class="search-close">
+                    <i class="fas fa-times"></i>
+                </button>
+                <form class="search-form">
+                    <input type="text" placeholder="Search for products..." class="search-input">
+                    <button type="submit" class="search-submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="product-details-main">
+        <div class="container">
+            <!-- Breadcrumb -->
+            <nav class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <a href="shop.html">Shop</a>
+                <span>/</span>
+                <a href="shop.html?category=skincare">Skincare</a>
+                <span>/</span>
+                <span>Luxury Face Cream</span>
+            </nav>
+
+            <!-- Product Details -->
+            <div class="product-details">
+                <!-- Product Gallery -->
+                <div class="product-gallery">
+                    <div class="product-image">
+                        <img src="assets/images/product-1.jpg" alt="Luxury Face Cream" class="main-product-image">
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-info">
+                    <div class="product-badges">
+                        <span class="badge badge-new">New</span>
+                    </div>
+                    
+                    <h1 class="product-title">Luxury Face Cream</h1>
+                    
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="rating-text">4.8 (124 reviews)</span>
+                        <a href="#reviews" class="review-link">Write a review</a>
+                    </div>
+                    
+                    <div class="product-price">
+                        <span class="current-price">$45.00</span>
+                    </div>
+                    
+                    <div class="product-description">
+                        <p>Experience the ultimate in luxury skincare with our premium face cream. Formulated with natural ingredients and advanced anti-aging technology, this cream provides deep hydration while reducing fine lines and wrinkles.</p>
+                    </div>
+                    
+                    <div class="product-options">
+                        <div class="option-group">
+                            <label>Size:</label>
+                            <div class="option-buttons">
+                                <button class="option-btn active" data-value="30ml">30ml</button>
+                                <button class="option-btn" data-value="50ml">50ml</button>
+                                <button class="option-btn" data-value="100ml">100ml</button>
+                            </div>
+                        </div>
+                        
+                        <div class="option-group">
+                            <label>Quantity:</label>
+                            <div class="quantity-selector">
+                                <button class="qty-btn minus">-</button>
+                                <input type="number" value="1" min="1" max="10" class="qty-input">
+                                <button class="qty-btn plus">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-actions">
+                        <button class="btn btn-primary add-to-cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add to Cart
+                        </button>
+                        <button class="btn btn-secondary wishlist-btn">
+                            <i class="fas fa-heart"></i>
+                            Add to Wishlist
+                        </button>
+                    </div>
+                    
+                    <div class="product-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">SKU:</span>
+                            <span class="meta-value">LFC-001</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Category:</span>
+                            <span class="meta-value">Skincare</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Tags:</span>
+                            <span class="meta-value">Anti-aging, Hydrating, Natural</span>
+                        </div>
+                    </div>
+                    
+                    <div class="product-features">
+                        <div class="feature">
+                            <i class="fas fa-shipping-fast"></i>
+                            <span>Free shipping on orders over $50</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-undo"></i>
+                            <span>30-day money back guarantee</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Secure payment</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Tabs -->
+            <div class="product-tabs">
+                <div class="tab-nav">
+                    <button class="tab-btn active" data-tab="description">Description</button>
+                    <button class="tab-btn" data-tab="ingredients">Ingredients</button>
+                    <button class="tab-btn" data-tab="how-to-use">How to Use</button>
+                    <button class="tab-btn" data-tab="reviews">Reviews</button>
+                </div>
+                
+                <div class="tab-content">
+                    <div class="tab-pane active" id="description">
+                        <h3>Product Description</h3>
+                        <p>Our Luxury Face Cream is the result of years of research and development, combining the finest natural ingredients with cutting-edge skincare technology. This premium formula is designed to provide your skin with the ultimate care it deserves.</p>
+                        
+                        <h4>Key Benefits:</h4>
+                        <ul>
+                            <li>Deep hydration for 24 hours</li>
+                            <li>Reduces fine lines and wrinkles</li>
+                            <li>Improves skin elasticity</li>
+                            <li>Protects against environmental damage</li>
+                            <li>Suitable for all skin types</li>
+                        </ul>
+                        
+                        <p>This luxurious cream absorbs quickly into the skin, leaving it feeling soft, smooth, and radiant. The lightweight formula won't clog pores and is perfect for both morning and evening use.</p>
+                    </div>
+                    
+                    <div class="tab-pane" id="ingredients">
+                        <h3>Ingredients</h3>
+                        <p>We believe in transparency when it comes to what goes into our products. Here are the key ingredients in our Luxury Face Cream:</p>
+                        
+                        <h4>Active Ingredients:</h4>
+                        <ul>
+                            <li><strong>Hyaluronic Acid:</strong> Provides intense hydration and plumps the skin</li>
+                            <li><strong>Vitamin C:</strong> Brightens skin tone and protects against free radicals</li>
+                            <li><strong>Retinol:</strong> Stimulates collagen production and reduces fine lines</li>
+                            <li><strong>Niacinamide:</strong> Improves skin texture and reduces pore size</li>
+                            <li><strong>Peptides:</strong> Strengthens skin barrier and promotes firmness</li>
+                        </ul>
+                        
+                        <h4>Natural Extracts:</h4>
+                        <ul>
+                            <li>Aloe Vera - Soothing and calming</li>
+                            <li>Green Tea - Antioxidant protection</li>
+                            <li>Jojoba Oil - Moisturizing and balancing</li>
+                            <li>Shea Butter - Nourishing and protective</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-pane" id="how-to-use">
+                        <h3>How to Use</h3>
+                        <p>For best results, follow these simple steps:</p>
+                        
+                        <h4>Step 1: Cleanse</h4>
+                        <p>Start with a clean face. Use your preferred cleanser to remove makeup and impurities.</p>
+                        
+                        <h4>Step 2: Tone (Optional)</h4>
+                        <p>Apply your favorite toner to balance your skin's pH levels.</p>
+                        
+                        <h4>Step 3: Apply Serum</h4>
+                        <p>If using a serum, apply it before the face cream for enhanced benefits.</p>
+                        
+                        <h4>Step 4: Apply Face Cream</h4>
+                        <p>Take a small amount of the Luxury Face Cream and gently massage it into your face and neck using upward circular motions. Use morning and evening for best results.</p>
+                        
+                        <h4>Step 5: Sun Protection</h4>
+                        <p>In the morning, always follow with a broad-spectrum sunscreen with SPF 30 or higher.</p>
+                    </div>
+                    
+                    <div class="tab-pane" id="reviews">
+                        <h3>Customer Reviews</h3>
+                        <div class="reviews-summary">
+                            <div class="overall-rating">
+                                <div class="rating-number">4.8</div>
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="rating-text">Based on 124 reviews</div>
+                            </div>
+                            <div class="rating-bars">
+                                <div class="rating-bar">
+                                    <span>5 stars</span>
+                                    <div class="bar">
+                                        <div class="bar-fill" style="width: 85%"></div>
+                                    </div>
+                                    <span>85%</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span>4 stars</span>
+                                    <div class="bar">
+                                        <div class="bar-fill" style="width: 12%"></div>
+                                    </div>
+                                    <span>12%</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span>3 stars</span>
+                                    <div class="bar">
+                                        <div class="bar-fill" style="width: 2%"></div>
+                                    </div>
+                                    <span>2%</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span>2 stars</span>
+                                    <div class="bar">
+                                        <div class="bar-fill" style="width: 1%"></div>
+                                    </div>
+                                    <span>1%</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="reviews-list">
+                            <div class="review-item">
+                                <div class="review-header">
+                                    <div class="reviewer-info">
+                                        <h4>Sarah J.</h4>
+                                        <div class="review-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <span class="review-date">2 days ago</span>
+                                </div>
+                                <p class="review-content">"This face cream is absolutely amazing! My skin feels so hydrated and smooth. I've noticed a significant improvement in my fine lines after just two weeks of use."</p>
+                            </div>
+                            
+                            <div class="review-item">
+                                <div class="review-header">
+                                    <div class="reviewer-info">
+                                        <h4>Emily T.</h4>
+                                        <div class="review-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <span class="review-date">1 week ago</span>
+                                </div>
+                                <p class="review-content">"I love how this cream absorbs quickly without leaving any greasy residue. The natural ingredients give me peace of mind, and the results are fantastic!"</p>
+                            </div>
+                        </div>
+                        
+                        <button class="btn btn-primary load-more-reviews">Load More Reviews</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Related Products -->
+            <section class="related-products">
+                <h2>Related Products</h2>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="assets/images/product-2.jpg" alt="Natural Lipstick">
+                            <div class="product-badges">
+                                <span class="badge badge-new">New</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="action-btn wishlist-btn" aria-label="Add to Wishlist">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                                <button class="action-btn quick-view-btn" aria-label="Quick View">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Natural Lipstick</h3>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(4.9)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$28.00</span>
+                            </div>
+                            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="assets/images/product-3.jpg" alt="Hydrating Serum">
+                            <div class="product-actions">
+                                <button class="action-btn wishlist-btn" aria-label="Add to Wishlist">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                                <button class="action-btn quick-view-btn" aria-label="Quick View">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Hydrating Serum</h3>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(4.7)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$65.00</span>
+                            </div>
+                            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="assets/images/product-4.jpg" alt="Organic Shampoo">
+                            <div class="product-badges">
+                                <span class="badge badge-new">New</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="action-btn wishlist-btn" aria-label="Add to Wishlist">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                                <button class="action-btn quick-view-btn" aria-label="Quick View">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Organic Shampoo</h3>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(4.6)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$32.00</span>
+                            </div>
+                            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>About Us</h4>
+                    <p>We're passionate about bringing you the finest beauty products with natural ingredients that are good for your skin and the planet.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.pinterest.com/"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="shop.html?category=skincare">Skincare</a></li>
+                        <li><a href="shop.html?category=makeup">Makeup</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get special offers and beauty tips delivered to your inbox.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <!--
+            <div class="footer-bottom">
+                <p>&copy; 2024 Cosmetics Website. All rights reserved.</p>
+            </div>
+            -->
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/product-details.js"></script>
+</body>
+</html> 

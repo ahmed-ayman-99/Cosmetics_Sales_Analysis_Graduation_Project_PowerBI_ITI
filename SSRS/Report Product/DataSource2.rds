@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="DataSource2">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=DESKTOP-OVMKTQV\SQLEXPRESS;Initial Catalog=CosmaticsDB</ConnectString>
+    <IntegratedSecurity>true</IntegratedSecurity>
+    <Prompt>Specify a user name and password for data source DataSource2</Prompt>
+  </ConnectionProperties>
+  <DataSourceID>042a3c70-7ce8-45ce-9780-d2c1db57780e</DataSourceID>
+</RptDataSource>

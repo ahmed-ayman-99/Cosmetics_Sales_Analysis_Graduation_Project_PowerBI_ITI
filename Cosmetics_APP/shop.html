@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Cosmetics Website</title>
+    <meta name="description" content="Shop our collection of premium beauty products including skincare, makeup, haircare, and fragrances.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo2.png" alt="Cosmetic" class="logo-img">
+                        <span class="logo-text">Cosmetics</span>
+                    </a>
+                </div>
+                
+                <!-- Navigation -->
+                <nav class="nav">
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="dropdown active">
+                            <a href="shop.html">Shop <i class="fas fa-chevron-down"></i></a>
+                            <div class="mega-menu">
+                                <div class="mega-menu-content">
+                                    <div class="mega-menu-column">
+                                        <h4>Makeup</h4>
+                                        <ul>
+                                            <li><a href="shop.html?subcategory=foundation">Foundation</a></li>
+                                            <li><a href="shop.html?subcategory=concealer">Concealer</a></li>
+                                            <li><a href="shop.html?subcategory=powder">Powder</a></li>
+                                            <li><a href="shop.html?subcategory=blush">Blush</a></li>
+                                            <li><a href="shop.html?subcategory=bronzer">Bronzer</a></li>
+                                            <li><a href="shop.html?subcategory=highlighter">Highlighter</a></li>
+                                            <li><a href="shop.html?subcategory=eye-shadow">Eye Shadow</a></li>
+                                            <li><a href="shop.html?subcategory=eyeliner">Eyeliner</a></li>
+                                            <li><a href="shop.html?subcategory=mascara">Mascara</a></li>
+                                            <li><a href="shop.html?subcategory=lipstick">Lipstick</a></li>
+                                            <li><a href="shop.html?subcategory=lip-gloss">Lip Gloss</a></li>
+                                            <li><a href="shop.html?subcategory=lip-liner">Lip Liner</a></li>
+                                            <li><a href="shop.html?subcategory=bb-cream">BB Cream</a></li>
+                                            <li><a href="shop.html?subcategory=cc-cream">CC Cream</a></li>
+                                            <li><a href="shop.html?subcategory=contour">Contour</a></li>
+                                            <li><a href="shop.html?subcategory=makeup-remover">Makeup Remover</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-menu-column">
+                                        <h4>Skincare</h4>
+                                        <ul>
+                                            <li><a href="shop.html?subcategory=cleanser">Cleanser</a></li>
+                                            <li><a href="shop.html?subcategory=moisturizer">Moisturizer</a></li>
+                                            <li><a href="shop.html?subcategory=serum">Serum</a></li>
+                                            <li><a href="shop.html?subcategory=face-oil">Face Oil</a></li>
+                                            <li><a href="shop.html?subcategory=exfoliator">Exfoliator</a></li>
+                                            <li><a href="shop.html?subcategory=face-mask">Face Mask</a></li>
+                                            <li><a href="shop.html?subcategory=primer">Primer</a></li>
+                                            <li><a href="shop.html?subcategory=setting-spray">Setting Spray</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-menu-column">
+                                        <h4>Featured</h4>
+                                        <ul>
+                                            <li><a href="shop.html?featured=new">New Arrivals</a></li>
+                                            <li><a href="shop.html?featured=sale">Sale Items</a></li>
+                                            <li><a href="shop.html?featured=best">Best Sellers</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Header Actions -->
+                <div class="header-actions">
+                    <button class="search-toggle" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <a href="#account" class="account-link" aria-label="Account">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <a href="wishlist.html" class="wishlist-link" aria-label="Wishlist">
+                        <i class="fas fa-heart"></i>
+                    </a>
+                    <a href="cart.html" class="cart-link" aria-label="Cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+                
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Search Overlay -->
+        <div class="search-overlay">
+            <div class="search-content">
+                <button class="search-close">
+                    <i class="fas fa-times"></i>
+                </button>
+                <form class="search-form">
+                    <input type="text" placeholder="Search for products..." class="search-input">
+                    <button type="submit" class="search-submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Shop</h1>
+            <nav class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <span>Shop</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="shop-main">
+        <div class="container">
+            <div class="shop-layout">
+                <!-- Sidebar -->
+                <aside class="shop-sidebar">
+                    <div class="sidebar-widget">
+                        <h3>Categories</h3>
+                        <div class="category-filter">
+                            <div class="main-category">
+                                <h4>Makeup</h4>
+                                <ul class="subcategory-list">
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" name="subcategory" value="blush">
+                                            <span>Blush</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" name="subcategory" value="makeup-remover">
+                                            <span>Makeup Remover</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" name="subcategory" value="highlighter">
+                                            <span>Highlighter</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" name="subcategory" value="foundation">
+                                            <span>Foundation</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" name="subcategory" value="powder">
+                                            <span>Powder</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" name="subcategory" value="lip-gloss">
+                                            <span>Lip Gloss</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" name="subcategory" value="cc-cream">
+                                            <span>CC Cream</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" name="subcategory" value="eye-shadow">
+                                            <span>Eye Shadow</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" name="subcategory" value="concealer">
+                                            <span>Concealer</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" name="subcategory" value="eyeliner">
+                                            <span>Eyeliner</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" name="subcategory" value="lipstick">
+                                            <span>Lipstick</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" name="subcategory" value="bronzer">
+                                            <span>Bronzer</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" name="subcategory" value="contour">
+                                            <span>Contour</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" name="subcategory" value="mascara">
+                                            <span>Mascara</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" name="subcategory" value="bb-cream">
+                                            <span>BB Cream</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" name="subcategory" value="lip-liner">
+                                            <span>Lip Liner</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="main-category">
+                                <h4>Skincare</h4>
+                                <ul class="subcategory-list">
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" name="subcategory" value="face-mask">
+                                            <span>Face Mask</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" name="subcategory" value="setting-spray">
+                                            <span>Setting Spray</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" name="subcategory" value="cleanser">
+                                            <span>Cleanser</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" name="subcategory" value="primer">
+                                            <span>Primer</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" name="subcategory" value="face-oil">
+                                            <span>Face Oil</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" name="subcategory" value="serum">
+                                            <span>Serum</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" name="subcategory" value="exfoliator">
+                                            <span>Exfoliator</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" name="subcategory" value="moisturizer">
+                                            <span>Moisturizer</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-widget">
+                        <h3>Price Range</h3>
+                        <div class="price-filter">
+                            <input type="range" id="price-range" min="0" max="200" value="200">
+                            <div class="price-inputs">
+                                <input type="number" id="min-price" placeholder="Min" min="0">
+                                <span>-</span>
+                                <input type="number" id="max-price" placeholder="Max" max="200">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-widget">
+                        <h3>Brands</h3>
+                        <ul class="brand-filter">
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="brand" value="luxury">
+                                    <span>Luxury Cosmetics</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="brand" value="organic">
+                                    <span>Organic Beauty</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="brand" value="professional">
+                                    <span>Professional</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="brand" value="drugstore">
+                                    <span>Drugstore Favorites</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-widget">
+                        <h3>Rating</h3>
+                        <ul class="rating-filter">
+                            <li>
+                                <label>
+                                    <input type="radio" name="rating" value="5">
+                                    <span class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span>& up</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="rating" value="4">
+                                    <span class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span>& up</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="rating" value="3">
+                                    <span class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span>& up</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <!-- Product Grid -->
+                <div class="shop-content">
+                    <!-- Toolbar -->
+                    <div class="shop-toolbar">
+                        <div class="toolbar-left">
+                            <p>Showing <span id="product-count">12</span> of <span id="total-products">48</span> products</p>
+                        </div>
+                        <div class="toolbar-right">
+                            <div class="sort-by">
+                                <label for="sort-select">Sort by:</label>
+                                <select id="sort-select">
+                                    <option value="featured">Featured</option>
+                                    <option value="price-low">Price: Low to High</option>
+                                    <option value="price-high">Price: High to Low</option>
+                                    <option value="name-asc">Name: A to Z</option>
+                                    <option value="name-desc">Name: Z to A</option>
+                                    <option value="rating">Highest Rated</option>
+                                    <option value="newest">Newest</option>
+                                </select>
+                            </div>
+                            <div class="view-toggle">
+                                <button class="view-btn grid-view active" aria-label="Grid View">
+                                    <i class="fas fa-th"></i>
+                                </button>
+                                <button class="view-btn list-view" aria-label="List View">
+                                    <i class="fas fa-list"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Products Grid -->
+                    <div class="products-grid" id="products-grid">
+                        <!-- Product cards will be dynamically generated -->
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="pagination">
+                        <button class="pagination-btn prev" disabled>
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <div class="pagination-numbers">
+                            <button class="pagination-btn active">1</button>
+                            <button class="pagination-btn">2</button>
+                            <button class="pagination-btn">3</button>
+                            <button class="pagination-btn">4</button>
+                        </div>
+                        <button class="pagination-btn next">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>About Us</h4>
+                    <p>We're passionate about bringing you the finest beauty products with natural ingredients that are good for your skin and the planet.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.pinterest.com/"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="shop.html?category=skincare">Skincare</a></li>
+                        <li><a href="shop.html?category=makeup">Makeup</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get special offers and beauty tips delivered to your inbox.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <!--
+            <div class="footer-bottom">
+                <p>&copy; 2024 Cosmetics Website. All rights reserved.</p>
+            </div>
+            -->
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/shop.js"></script>
+</body>
+</html> 

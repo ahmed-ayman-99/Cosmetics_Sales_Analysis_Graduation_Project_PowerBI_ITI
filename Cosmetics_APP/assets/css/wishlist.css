@@ -1,0 +1,129 @@
+/* Wishlist Page Styles */
+
+.wishlist-main {
+  padding: var(--spacing-large) 0;
+  background: var(--light-color);
+}
+
+.wishlist-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-large);
+}
+
+.wishlist-card {
+  background: #fff;
+  border-radius: var(--radius-medium);
+  box-shadow: 0 2px 12px rgba(80,104,103,0.06);
+  padding: var(--spacing-medium);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.2s;
+  position: relative;
+}
+
+.wishlist-card:hover {
+  box-shadow: 0 4px 24px rgba(252,154,141,0.12);
+}
+
+.wishlist-card-image {
+  width: 120px;
+  height: 120px;
+  border-radius: var(--radius-medium);
+  object-fit: cover;
+  background: var(--warm-lighter);
+  margin-bottom: var(--spacing-small);
+}
+
+.wishlist-card-title {
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  color: var(--text-color);
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.wishlist-card-price {
+  font-size: 16px;
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: var(--spacing-small);
+}
+
+.wishlist-card-actions {
+  display: flex;
+  gap: var(--spacing-small);
+  margin-top: 8px;
+}
+
+.add-to-cart-btn {
+  background: var(--secondary-color);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-small);
+  padding: 8px 18px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.add-to-cart-btn:hover {
+  background: var(--primary-color);
+}
+
+.remove-wishlist-btn {
+  background: none;
+  border: none;
+  color: #f44336;
+  font-size: 18px;
+  cursor: pointer;
+  margin-left: 6px;
+  transition: color 0.2s;
+}
+
+.remove-wishlist-btn:hover {
+  color: #b71c1c;
+}
+
+.wishlist-empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-xlarge) 0;
+  color: var(--secondary-color);
+  font-size: 22px;
+  gap: var(--spacing-medium);
+  animation: fadeIn 0.5s;
+}
+
+.wishlist-empty-state i {
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-small);
+}
+
+@media (max-width: 1024px) {
+  .wishlist-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .wishlist-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-medium);
+  }
+  .wishlist-card-image {
+    width: 90px;
+    height: 90px;
+  }
+  .wishlist-card {
+    padding: var(--spacing-small);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+} 
