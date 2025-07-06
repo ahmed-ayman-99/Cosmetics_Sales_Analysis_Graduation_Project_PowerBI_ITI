@@ -16,6 +16,15 @@ function initLoginForm() {
         loginForm.addEventListener('submit', handleLoginSubmit);
     }
     
+    // Also add direct click handler to the button
+    if (loginBtn) {
+        loginBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            console.log('Login button clicked!');
+            window.location.href = 'index.html';
+        });
+    }
+    
     // Auto-focus on email field
     const emailInput = document.getElementById('email');
     if (emailInput) {
@@ -24,70 +33,13 @@ function initLoginForm() {
 }
 
 // Handle login form submission
-async function handleLoginSubmit(e) {
+function handleLoginSubmit(e) {
     e.preventDefault();
+    console.log('Login form submitted!');
     
-    const form = e.target;
-    const loginBtn = form.querySelector('.login-btn');
-    const emailInput = document.getElementById('email');
-    const passwordInput = document.getElementById('password');
-    const rememberCheckbox = document.getElementById('remember');
-    
-    // Clear previous errors
-    clearFormErrors();
-    
-    // Validate form
-    const isValid = validateLoginForm();
-    if (!isValid) {
-        return;
-    }
-    
-    // Show loading state
-    setLoadingState(loginBtn, true);
-    
-    try {
-        // Prepare form data
-        const formData = {
-            email: emailInput.value.trim(),
-            password: passwordInput.value,
-            remember: rememberCheckbox.checked
-        };
-        
-        // Make API call
-        const response = await loginUser(formData);
-        
-        if (response.success) {
-            // Store user data if remember me is checked
-            if (rememberCheckbox.checked) {
-                localStorage.setItem('user', JSON.stringify(response.user));
-            } else {
-                sessionStorage.setItem('user', JSON.stringify(response.user));
-            }
-            
-            // Store auth token
-            localStorage.setItem('authToken', response.token);
-            
-            // Show success message
-            showNotification('Login successful! Redirecting...', 'success');
-            
-            // Redirect to dashboard or previous page
-            setTimeout(() => {
-                const redirectUrl = getRedirectUrl();
-                window.location.href = redirectUrl;
-            }, 1500);
-            
-        } else {
-            // Handle login error
-            handleLoginError(response.message || 'Login failed. Please try again.');
-        }
-        
-    } catch (error) {
-        console.error('Login error:', error);
-        handleLoginError('Network error. Please check your connection and try again.');
-    } finally {
-        // Hide loading state
-        setLoadingState(loginBtn, false);
-    }
+    // Redirect to home page immediately
+    console.log('Redirecting to index.html...');
+    window.location.href = 'index.html';
 }
 
 // API call to login user

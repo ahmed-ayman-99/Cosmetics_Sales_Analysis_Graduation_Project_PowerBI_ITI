@@ -1,24 +1,27 @@
 const fs = require('fs');
 const path = require('path');
 
-// Create .env file with SQL Server configuration
-const envContent = `PORT=3000
+// Create .env file with SQL Server SA configuration
+const envContent = `# Server Configuration
+PORT=3000
 NODE_ENV=development
-JWT_SECRET=cosmetic-cursor-super-secret-jwt-key-2024
 FRONTEND_URL=http://localhost:3000
 
-# SQL Server Configuration for DESKTOP-6O91F9F
+# Database Configuration for DESKTOP-6O91F9F
 DB_SERVER=DESKTOP-6O91F9F
-DB_NAME=CosmaticsDB
+DB_NAME=CosmeticsDB
 DB_USER=sa
 DB_PASSWORD=1234
 DB_ENCRYPT=false
 DB_TRUST_CERT=true
+
+# JWT Secret
+JWT_SECRET=cosmetic-cursor-super-secret-jwt-key-2024
 `;
 
 // Write .env file
 fs.writeFileSync('.env', envContent);
-console.log('✅ Created .env file with SQL Server configuration');
+console.log('✅ Created .env file with SQL Server SA configuration');
 
 // Test database connection
 async function testDatabaseConnection() {
@@ -52,17 +55,19 @@ async function testDatabaseConnection() {
             console.log('   1. Make sure SQL Server is running');
             console.log('   2. Check if SQL Server Browser service is running');
             console.log('   3. Verify the server name: DESKTOP-6O91F9F');
-            console.log('   4. Check if the database "CosmaticsDB" exists');
-            console.log('   5. Verify username/password in .env file');
+            console.log('   4. Check if the database "CosmeticsDB" exists');
+            console.log('   5. Verify SA password in .env file');
+            console.log('   6. Make sure SQL Server Authentication is enabled');
         }
         
     } catch (error) {
         console.error('\n❌ Setup error:', error.message);
         console.log('\n🔧 Please check:');
         console.log('   1. SQL Server is running');
-        console.log('   2. Database "CosmaticsDB" exists');
+        console.log('   2. Database "CosmeticsDB" exists');
         console.log('   3. SQL Server Authentication is enabled');
         console.log('   4. Firewall is not blocking port 1433');
+        console.log('   5. SA password is correct');
     }
 }
 

@@ -4,12 +4,12 @@ require('dotenv').config();
 // SQL Server configuration for your specific setup
 const dbConfig = {
     server: process.env.DB_SERVER || 'DESKTOP-6O91F9F',
-    database: process.env.DB_NAME || 'CosmaticsDB',
+    database: process.env.DB_NAME || 'CosmeticsDB',
     user: process.env.DB_USER || 'sa',
     password: process.env.DB_PASSWORD || '1234',
     options: {
-        encrypt: process.env.DB_ENCRYPT === 'true', // For Azure
-        trustServerCertificate: process.env.DB_TRUST_CERT === 'true', // For local dev
+        encrypt: process.env.DB_ENCRYPT === 'true',
+        trustServerCertificate: process.env.DB_TRUST_CERT === 'true',
         enableArithAbort: true,
         requestTimeout: 30000,
         connectionTimeout: 30000
@@ -43,7 +43,7 @@ async function getConnection() {
 async function testConnection() {
     try {
         const pool = await getConnection();
-        const result = await pool.request().query('SELECT 1 as test, GETDATE() as current_time');
+        const result = await pool.request().query('SELECT 1 as test, GETDATE() as server_time');
         console.log('✅ Database connection test successful:', result.recordset[0]);
         return true;
     } catch (error) {
@@ -118,6 +118,23 @@ async function initializeDatabase() {
         await pool.request().query(checkTestUser);
         console.log('✅ Test user ready');
         
+        // Create Mona's test user if not exists
+        const checkMonaUser = `
+            IF NOT EXISTS (SELECT * FROM Users WHERE email = 'mona.rizk225@gmail.com')
+            BEGIN
+                INSERT INTO Users (email, password, name, role, email_verified)
+                VALUES ('mona.rizk225@gmail.com', '$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'Mona Rizk', 'customer', 1)
+                PRINT 'Mona user created'
+            END
+            ELSE
+            BEGIN
+                PRINT 'Mona user already exists'
+            END
+        `;
+        
+        await pool.request().query(checkMonaUser);
+        console.log('✅ Mona user ready');
+        
         console.log('🎉 Database initialization completed successfully!');
         
     } catch (error) {
@@ -186,8 +203,7 @@ const userOperations = {
             const pool = await getConnection();
             await pool.request()
                 .input('id', sql.Int, id)
-                .input('last_login', sql.DateTime, new Date())
-                .query('UPDATE Users SET last_login = @last_login WHERE id = @id');
+                .query('UPDATE Users SET last_login = GETDATE() WHERE id = @id');
         } catch (error) {
             console.error('Error updating last login:', error);
             throw error;
@@ -201,10 +217,9 @@ const userOperations = {
             const result = await pool.request()
                 .input('id', sql.Int, id)
                 .input('name', sql.NVarChar, userData.name)
-                .input('updated_at', sql.DateTime, new Date())
                 .query(`
                     UPDATE Users 
-                    SET name = @name, updated_at = @updated_at
+                    SET name = @name, updated_at = GETDATE()
                     OUTPUT INSERTED.id, INSERTED.email, INSERTED.name, INSERTED.role
                     WHERE id = @id
                 `);
@@ -223,8 +238,7 @@ const userOperations = {
             await pool.request()
                 .input('id', sql.Int, id)
                 .input('password', sql.NVarChar, newPassword)
-                .input('updated_at', sql.DateTime, new Date())
-                .query('UPDATE Users SET password = @password, updated_at = @updated_at WHERE id = @id');
+                .query('UPDATE Users SET password = @password, updated_at = GETDATE() WHERE id = @id');
         } catch (error) {
             console.error('Error changing password:', error);
             throw error;
