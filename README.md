@@ -138,7 +138,7 @@ In today’s competitive cosmetics market, understanding customer behavior and p
 
 ## 📎 Full Documentation
 
-Full project documentation including ETL, DAX measures, stored procedures, and dashboard design is available in `/docs` or in the attached [Final Documentation PDF](Final%20Documentation.pdf).
+Full project documentation including ETL, DAX measures, stored procedures, and dashboard design is available in the attached [Final Documentation PDF](Final%20Documentation.pdf).
 
 ## 🔧 License
 
