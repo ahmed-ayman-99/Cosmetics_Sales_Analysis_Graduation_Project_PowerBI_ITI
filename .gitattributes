@@ -3,3 +3,7 @@
 
 # Force GitHub to recognize .sql files as SQL
 *.sql linguist-language=SQL
+
+# Ignore Markdown and HTML from language stats
+*.md linguist-documentation
+*.html linguist-documentation
