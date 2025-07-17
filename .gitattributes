@@ -7,3 +7,4 @@
 # Ignore Markdown and HTML from language stats
 *.md linguist-documentation
 *.html linguist-documentation
+*.js linguist-documentation
