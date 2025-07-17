@@ -2,9 +2,13 @@
 * text=auto
 
 # Force GitHub to recognize .sql files as SQL
-*.sql linguist-language=SQL
+*.sql linguist-language=TSQL
 
 # Ignore Markdown and HTML from language stats
 *.md linguist-documentation
 *.html linguist-documentation
 *.js linguist-documentation
+*.py linguist-vendored
+*.css linguist-vendored
+*.html linguist-vendored
+*.ipynb linguist-vendored
