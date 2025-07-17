@@ -9,6 +9,6 @@
 *.html linguist-documentation
 *.js linguist-documentation
 *.py linguist-vendored
-*.css linguist-vendored
+*.css linguist-documentation
 *.html linguist-vendored
 *.ipynb linguist-vendored
